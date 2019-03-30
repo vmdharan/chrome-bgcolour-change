@@ -1,0 +1,31 @@
+{
+    "name": "Page Background Colour Changer",
+    "version": "0.1",
+    "description": "Test extension for Chrome. Allow changing colour of page background.",
+    "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "storage"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "options_page": "options.html",
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/baseline_polymer_black_18dp.png",
+            "32": "icons/baseline_polymer_black_24dp.png",
+            "48": "icons/baseline_polymer_black_36dp.png",
+            "128": "icons/baseline_polymer_black_48dp.png"
+        }
+    },
+    "icons": {
+        "16": "icons/baseline_polymer_black_18dp.png",
+        "32": "icons/baseline_polymer_black_24dp.png",
+        "48": "icons/baseline_polymer_black_36dp.png",
+        "128": "icons/baseline_polymer_black_48dp.png"
+    },
+    "manifest_version": 2
+}
