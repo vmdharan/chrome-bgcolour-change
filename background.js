@@ -2,7 +2,6 @@ chrome.runtime.onInstalled.addListener(function() {
     chrome.storage.sync.set({
         color: '#3a57a7'
     }, function() {
-        console.log("The color is " + color);
     });
 
     chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
